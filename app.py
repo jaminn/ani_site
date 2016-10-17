@@ -18,7 +18,7 @@ def query2db(query):
 
 @app.route('/aaa')
 def hello():
-    return "test test test"
+    return "denchon"
 
 
 @app.route('/<query>')
