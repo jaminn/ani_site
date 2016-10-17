@@ -2,7 +2,6 @@ import pymongo
 from flask import Flask, render_template
 
 app = Flask(__name__)
-#client = pymongo.MongoClient("localhost", 27017)
 client = pymongo.MongoClient("mongodb://rnnwkals1:hi000319@ds041939.mlab.com:41939/ani_db")
 db = client.ani_db
 print(db.anime2.find_one({"info.name": {"$regex": "나"}}))
