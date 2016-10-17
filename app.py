@@ -20,8 +20,8 @@ def hello():
 @app.route('/<query>')
 def index(query):
     anis = query2db(query)
-    #return render_template("ani_page.html", anis=anis)
-    return "jamin:"+query+str(anis)+"end"
+    return render_template("ani_page.html", anis=anis)
+    #return "jamin:"+query+str(anis)+"end"
 
 
 if __name__ == '__main__':
