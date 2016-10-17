@@ -16,9 +16,9 @@ def query2db(query):
     return anis
 
 
-@app.route('/')
+@app.route('/aaa')
 def hello():
-    return "sex on the beach"
+    return "test test test"
 
 
 @app.route('/<query>')
